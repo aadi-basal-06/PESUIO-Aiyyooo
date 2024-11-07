@@ -1,14 +1,14 @@
 {
-  "USERNAME": "john_doe",
-  "PASSWORD": "securepassword",
+  "USERNAME": "Varun",
+  "PASSWORD": "hllo",
   "QUESTIONS": [
     {
-      "Q": "What is your favorite color?",
-      "A": "Blue"
+      "Q": "What is the best PESU_IO course?",
+      "A": "Intro to backend with Golang."
     },
     {
-      "Q": "What is your pet's name?",
-      "A": "Buddy"
+      "Q": "Best SME?",
+      "A": "Anurag"
     }
   ]
 }
@@ -19,8 +19,8 @@
 
 
 {
-  "USERNAME": "john_doe",
-  "PASSWORD": "securepassword"
+  "USERNAME": "Varun",
+  "PASSWORD": "hllo"
 }
 
 
@@ -28,8 +28,8 @@
 
 
 {
-  "USERNAME": "john_doe",
-  "QUESTION": "What is your favorite color?"
+  "USERNAME": "Varun",
+  "QUESTION": "Best SME?"
 }
 
 
@@ -37,9 +37,9 @@
 
 
 {
-  "USERNAME": "john_doe",
-  "Q": "What is your favorite food?",
-  "A": "Pizza"
+  "USERNAME": "Varun",
+  "Q": "Which room is out Golang class held in?",
+  "A": "Yes."
 }
 
 
