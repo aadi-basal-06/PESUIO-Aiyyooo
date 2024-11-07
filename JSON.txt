@@ -1,0 +1,54 @@
+{
+  "USERNAME": "john_doe",
+  "PASSWORD": "securepassword",
+  "QUESTIONS": [
+    {
+      "Q": "What is your favorite color?",
+      "A": "Blue"
+    },
+    {
+      "Q": "What is your pet's name?",
+      "A": "Buddy"
+    }
+  ]
+}
+
+
+
+
+
+
+{
+  "USERNAME": "john_doe",
+  "PASSWORD": "securepassword"
+}
+
+
+
+
+
+{
+  "USERNAME": "john_doe",
+  "QUESTION": "What is your favorite color?"
+}
+
+
+
+
+
+{
+  "USERNAME": "john_doe",
+  "Q": "What is your favorite food?",
+  "A": "Pizza"
+}
+
+
+
+
+
+
+
+{
+  "FILENAME": "reverse.txt"
+}
+
