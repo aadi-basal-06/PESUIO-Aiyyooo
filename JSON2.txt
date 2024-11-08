@@ -1,0 +1,29 @@
+{
+  "USERNAME": "Varun",
+  "PASSWORD": "hllo",
+  "QUESTIONS": [{"Q": "What is the best PESU_IO course?", "A": "Intro to backend with Golang"}]
+}
+
+
+{
+  "USERNAME": "Varun",
+  "PASSWORD": "hllo"
+}
+
+
+{
+  "USERNAME": "Varun",
+  "QUESTION": "What is the best PESU_IO course?"
+}
+
+
+{
+  "USERNAME": "Varun",
+  "Q": "Best SME?",
+  "A": "Anurag"
+}
+
+
+{
+  "FILENAME": "reverse.py"
+}
