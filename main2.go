@@ -158,6 +158,7 @@ func runPython(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"ERROR": "Failed to create temp file"})
 		return
 	}
+	defer os.Remove(tmpfile.Name()) // Delete the temp file after execution
 	defer tmpfile.Close()
 
 	// Write the code to the temporary file
@@ -166,17 +167,21 @@ func runPython(c *gin.Context) {
 		return
 	}
 
-	// Now, instead of input(), pass a string argument to the script
-	// If you're not using print or input(), you can safely omit these lines
-	cmd := exec.Command("python", tmpfile.Name()) // Run the script without passing input or capturing output
+	// Execute the Python script and capture output
+	cmd := exec.Command("python", tmpfile.Name())
+	var out bytes.Buffer
+	cmd.Stdout = &out
+	cmd.Stderr = &out
 	err = cmd.Run()
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"ERROR": "Failed to execute Python code"})
+		c.JSON(http.StatusInternalServerError, gin.H{"ERROR": "Failed to execute Python code", "DETAILS": out.String()})
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"RECEIVED": "Python script executed successfully"})
+	// Return the actual output of the executed Python script
+	c.JSON(http.StatusOK, gin.H{"OUTPUT": out.String()})
 }
+
 
 func main() {
 	router := gin.Default()
