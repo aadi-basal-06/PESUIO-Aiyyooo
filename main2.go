@@ -153,7 +153,7 @@ func runPython(c *gin.Context) {
 	}
 
 	// Save Python code to a temporary file
-	tmpfile, err := ioutil.TempFile("", "script-*.py")
+	tmpfile, err := ioutil.TempFile("", "temp-*.py")
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"ERROR": "Failed to create temp file"})
 		return
